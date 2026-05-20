@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Faktura VAT</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding-top: 50px;
+        }
+
+
+        .arkusz-faktury {
+            width: 800px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #cccccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+
+        .zielony-ciemny { background-color: #c2e0c2; }
+        .zielony-jasny { background-color: #e8f3e8; }
+        .niebieski-naglowek { background-color: #5c6784; color: white; }
+        .niebieski-szary { background-color: #727fa1; color: white; }
+        .podsumowanie { background-color: #d4e0ad; font-weight: bold; }
+        .kwota-finalna { background-color: #c5d68d; font-size: 18px; }
+    </style>
+</head>
+<body>
+
+    <div class="arkusz-faktury">
+
+        <h2 style="text-align: center;">FV FAKTURA VAT nr 01/2026</h2>
+
+        <table>
+            <tr>
+                <th class="zielony-ciemny">SPRZEDAWCA</th>
+                <th class="zielony-jasny">NABYWCA</th>
+            </tr>
+            <tr>
+                <td class="zielony-ciemny">
+                    Firma Przykładowa Sp. z o.o.<br>
+                    ul. Testowa 1<br>
+                    00-001 Miasto
+                </td>
+                <td class="zielony-jasny">
+                    Jan Kowalski<br>
+                    ul. Klienta 2<br>
+                    11-111 Wieś
+                </td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td colspan="5" class="niebieski-naglowek"><b>SZCZEGÓŁY ZAMÓWIENIA</b></td>
+            </tr>
+            <tr class="niebieski-szary">
+                <th style="width: 40px;">Lp.</th>
+                <th>NAZWA TOWARU / USŁUGI</th>
+                <th style="width: 60px;">ILOŚĆ</th>
+                <th style="width: 150px;">CENA JEDN. (netto)</th>
+                <th style="width: 150px;">WARTOŚĆ NETTO</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td style="text-align: left;">Projekt strony WWW</td>
+                <td>1</td>
+                <td>2500,00 PLN</td>
+                <td>2500,00 PLN</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td style="text-align: left;">Hosting</td>
+                <td>1</td>
+                <td>200,00 PLN</td>
+                <td>200,00 PLN</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td style="text-align: left;">Domena .pl</td>
+                <td>1</td>
+                <td>100,00 PLN</td>
+                <td>100,00 PLN</td>
+            </tr>
+            <tr style="height: 40px;">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td style="text-align: right; vertical-align: bottom;">0,00 PLN</td>
+            </tr>
+            <tr class="podsumowanie">
+                <td colspan="4" style="text-align: right;">DO ZAPŁATY (PLN):</td>
+                <td class="kwota-finalna">2700,00 PLN</td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+</html>
